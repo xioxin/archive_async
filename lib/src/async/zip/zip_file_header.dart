@@ -93,8 +93,8 @@ class AsyncZipFileHeader {
 
   Future<AsyncZipFile> getFile(AsyncInputStreamBase input, [String? password]) async {
     if(file == null) {
-      input.position = localHeaderOffset!;
-      file = await AsyncZipFile().init(input, this, password);
+      final subInput = input.subset(localHeaderOffset!);
+      file = await AsyncZipFile().init(subInput, this, password);
     }
     return file!;
   }

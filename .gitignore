@@ -14,3 +14,7 @@ example/decode_zip.dart.precompiled.js
 .history
 test/tests/out/
 out/
+cat.zip
+cat1.zip
+cat2.zip
+.DS_Stire

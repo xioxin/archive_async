@@ -1,8 +1,7 @@
 name: archive_async
-version: 3.3.0
+version: 0.0.1
 description: >-
-  Provides encoders and decoders for various archive and compression formats
-  such as zip, tar, bzip2, gzip, and zlib.
+  Used to asynchronously decompress files and load data on demand, zip is currently supported.
 repository: https://github.com/xioxin/async-archive
 environment:
   sdk: '>=2.12.0 <3.0.0'
